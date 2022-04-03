@@ -76,21 +76,19 @@ def questions_on_countries():
     print('\nScore :', new_counter, 'Points')
     return new_counter
 
-
-
-def questions_Movie():
+def questions_movies():
     new_counter1 = questions_on_countries()
     print('\n\nSection 3: Movies')
     print("\nQuestion7 - ' When did the first Harry Potter film come out ?")
     print('1. 2002\n2. 1997\n3. 2001\n4. 1999')
     answer = int(input('Your Answer:'))
     while answer not in range(1, 5):
-        answer = int(input('try again:'))
+        answer = int(input('Wrong Number, Try Again:'))
     if answer == 3:
         new_counter1 += 10
-        print("correct answer")
+        print("Correct Answer")
     else:
-        print("incorrect answer")
+        print("Incorrect Answer")
 
     print('\n\nQuestion8 -How many seasons does the paper house have ?')
     print('1. 4\n2. 6\n3. 3\n4. 5')
@@ -104,7 +102,7 @@ def questions_Movie():
         print('Incorrect Answer ! ')
 
     print("\n\nQuestion9 - What is the most profitable film in history ?")
-    print('1. supermen\n2. the Avengers\n3. The train \n4. Harry Potter')
+    print('1. Supermen\n2. the Avengers\n3. The train \n4. Harry Potter')
     ans1 = int(input('Your Answer: '))
     while ans1 not in range(1, 5):
         ans1 = int(input('Wrong Number , Try Again: '))
@@ -117,8 +115,8 @@ def questions_Movie():
     return new_counter1
 
 
-def questions_python():
-    new_counter2=questions_Movie()
+def bonus_question():
+    new_counter2 = questions_movies()
     print("\n\nQuestion10 - If we want even numbers what should we use?")
     print('1. == \n2. % 2\n3. 2 %\n4. ! = ')
     ans1 = int(input('Your Answer: '))
@@ -132,4 +130,3 @@ def questions_python():
     print('\n Total Score: ', new_counter2, 'Points')
     return new_counter2
 
-questions_python()
