@@ -62,4 +62,44 @@ def questions_on_countries():
 
     print('points:', new_counter)
 
-questions_on_countries()
+def questions_Country():
+    new_counter= questions_on_sport()
+    print('\n\nSection 3: Countries')
+    print("question7 :' what is capital city of israel?")
+    print('1. Haifa\n2. Paris\n3. Tel-Aviv\n4. Jerusalem')
+    answer = int(input('Answer:'))
+    while answer not in range(1,5):
+        answer = int(input('try again:'))
+    if answer ==4:
+        new_counter =+ 10
+        print("correct answer")
+    else:
+        print("incorrect answer")
+    print('points:', new_counter)
+
+
+    print('question8 : What is the largest island in the world?')
+    print('1. grinlend\n2. honsho\n3. janna\n4. madgaster')
+    answer = int(input('Answer:'))
+    while answer not in range(1,5):
+        answer = int(input('try again:'))
+    if answer ==1:
+        new_counter=+10
+        print("correct answer")
+    else:
+        print("incorrect answer")
+    print('points:',new_counter)
+
+
+    new_counter=
+    print('question9 : Which beer is produced in the Netherlands?')
+    print('1. maccabi\n2. heineken\n3. corona\n4. tuborg')
+    answer = int(input('Answer:'))
+    while answer not in range(1,5):
+        answer = int(input('try again:'))
+    if answer ==2:
+        new_counter =+10
+        print("correct answer")
+    else:
+        print("incorrect answer")
+        return new_counter
