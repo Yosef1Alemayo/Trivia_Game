@@ -43,12 +43,13 @@ def questions_on_sport():
         print('Correct Answer ☻ ')
     else:
         print('Incorrect Answer ! ')
-    print('Section1 -- Your Points:', counter)
+    print('\nSection1 -- Your Points:', counter)
     return counter
+
 
 def questions_on_countries():
     new_counter = questions_on_sport()
-    print('\n\nSection 2: Countries')
+    print('\n\n\nSection 2: Countries')
     print('\nQuestion4 - What is the capital of United States of America ?')
     print('1. Seattle\n2. Washington D.C.\n3. Chicago\n4. New York')
     ans1 = int(input('Your Answer: '))
@@ -60,6 +61,28 @@ def questions_on_countries():
     else:
         print('Incorrect Answer ! ')
 
-    print('points:', new_counter)
+    print('\n\nQuestion5 - What is the capital of Portugal ?')
+    print('1. Amadora\n2. Braga\n3. Lisbon\n4. Porto')
+    ans1 = int(input('Your Answer: '))
+    while ans1 not in range(1, 5):
+        ans1 = int(input('Wrong Number , Try Again: '))
+    if ans1 == 3:
+        new_counter += 10
+        print('Correct Answer ☻ ')
+    else:
+        print('Incorrect Answer ! ')
 
-questions_on_countries()
+    print("\n\nQuestion6 - What is The Capital of Kenya ?")
+    print('1. Nairobi\n2. Eldoret\n3. Mombasa \n4. Nakuru')
+    ans1 = int(input('Your Answer: '))
+    while ans1 not in range(1, 5):
+        ans1 = int(input('Wrong Number , Try Again: '))
+    if ans1 == 1:
+        new_counter += 10
+        print('Correct Answer ☻ ')
+    else:
+        print('Incorrect Answer ! ')
+    print('\nSection2 -- Your Points:', new_counter)
+    return new_counter
+
+
