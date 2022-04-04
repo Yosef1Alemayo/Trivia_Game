@@ -1,7 +1,7 @@
 
 def questions_on_sport():
     counter = 0
-    print('Section 1: Sport')
+    print('\nSection 1: Sport')
     print('\nQuestion1 - Who was the first player to score at five World Cup editions ?')
     print('1. Marta\n2. Pele\n3. Ronaldo\n4. Lionel Messi')
     ans1 = int(input('Your Answer: '))
@@ -34,7 +34,9 @@ def questions_on_sport():
         print('Correct Answer ☻ ')
     else:
         print('Incorrect Answer ! ')
+    print('----------------------------')
     print('\nScore :', counter, 'Points')
+    print('\n----------------------------')
     return counter
 
 
@@ -73,7 +75,9 @@ def questions_on_countries():
         print('Correct Answer ☻ ')
     else:
         print('Incorrect Answer ! ')
+    print('-----------------------------')
     print('\nScore :', new_counter, 'Points')
+    print('\n---------------------------')
     return new_counter
 
 def questions_movies():
@@ -111,7 +115,9 @@ def questions_movies():
         print('Correct Answer ☻ ')
     else:
         print('Incorrect Answer ! ')
+    print('-----------------------------------')
     print('\nScore: ', new_counter1, 'Points')
+    print('\n----------------------------------')
     return new_counter1
 
 
@@ -127,6 +133,9 @@ def bonus_question():
         print('Correct Answer ☻ ')
     else:
         print('Incorrect Answer ! ')
+    print('----------------------------------------')
     print('\n Total Score: ', new_counter2, 'Points')
+    print('\n----------------------------------------')
     return new_counter2
 
+# How To Combine The Functions:
