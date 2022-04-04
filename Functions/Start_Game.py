@@ -16,7 +16,8 @@ def start_the_game():
         print('------------------------')
         st = bonus_question()
         if st >= 100:
-            print(user, 'You The Best ')
+            print(user, 'You The Best ! ')
         else:
             print(user, 'You can do better than that')
         return st
+
