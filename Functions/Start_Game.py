@@ -1,5 +1,4 @@
-from Questions_Answers.File1 import *
-
+from Questions_Answers.Bonus_Question import bonus_question
 def start_the_game():
     print('---------------------------------------------------------')
     print('Welcome To Trivia Game ☻\nThere is 9 Questions and One is Bonus!')
@@ -21,6 +20,3 @@ def start_the_game():
         else:
             print(user, 'You can do better than that')
         return st
-
-
-start_the_game()
